@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <h2 class="logo">MyPortfolio</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Hello, I'm <span>Your Name</span></h1>
+            <p>I build clean and modern web experiences.</p>
+            <button onclick="scrollToProjects()">View My Work</button>
+        </div>
+    </section>
+
+    <!-- PROJECT SECTION -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="project-grid">
+            <div class="card">
+                <h3>Project 1</h3>
+                <p>A modern website using HTML, CSS & JS.</p>
+                <a target="_blank" href="#">View Demo</a>
+            </div>
+
+            <div class="card">
+                <h3>Project 2</h3>
+                <p>Responsive design with clean UI.</p>
+                <a target="_blank" href="#">View Demo</a>
+            </div>
+
+            <div class="card">
+                <h3>Project 3</h3>
+                <p>Interactive animations using JS.</p>
+                <a target="_blank" href="#">View Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact Me</h2>
+
+        <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
