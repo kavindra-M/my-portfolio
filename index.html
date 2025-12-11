@@ -3,66 +3,95 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Kavindra | Frontend Web Developer</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <!-- NAVBAR -->
+    <!-- Navbar -->
     <nav class="navbar">
-        <h2 class="logo">MyPortfolio</h2>
-        <ul>
+        <div class="logo">Kavindra</div>
+        <ul class="nav-links">
             <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- HERO SECTION -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-text">
-            <h1>Hello, I'm <span>Your Name</span></h1>
-            <p>I build clean and modern web experiences.</p>
-            <button onclick="scrollToProjects()">View My Work</button>
+        <div class="hero-content">
+            <h1>Hello, I'm <span>Kavindra</span></h1>
+            <p>Frontend Web Developer</p>
+            <a href="#projects" class="btn">View My Work</a>
         </div>
     </section>
 
-    <!-- PROJECT SECTION -->
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            I'm <b>Kavindra</b>, a passionate Frontend Web Developer who loves building 
+            clean, responsive, and modern websites. I enjoy turning ideas into 
+            functional and visually appealing UI/UX designs.
+        </p>
+        <div class="skills">
+            <div class="skill-bar">
+                <p>HTML</p>
+                <div class="progress html"></div>
+            </div>
+
+            <div class="skill-bar">
+                <p>CSS</p>
+                <div class="progress css"></div>
+            </div>
+
+            <div class="skill-bar">
+                <p>JavaScript</p>
+                <div class="progress js"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
     <section id="projects" class="projects">
-        <h2 class="section-title">My Projects</h2>
+        <h2>Projects</h2>
 
         <div class="project-grid">
-            <div class="card">
-                <h3>Project 1</h3>
-                <p>A modern website using HTML, CSS & JS.</p>
-                <a target="_blank" href="#">View Demo</a>
+
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>Responsive personal portfolio built using HTML, CSS & JS.</p>
             </div>
 
-            <div class="card">
-                <h3>Project 2</h3>
-                <p>Responsive design with clean UI.</p>
-                <a target="_blank" href="#">View Demo</a>
+            <div class="project-card">
+                <h3>Landing Page</h3>
+                <p>Modern UI landing page with animations.</p>
             </div>
 
-            <div class="card">
-                <h3>Project 3</h3>
-                <p>Interactive animations using JS.</p>
-                <a target="_blank" href="#">View Demo</a>
+            <div class="project-card">
+                <h3>Calculator App</h3>
+                <p>Simple calculator using HTML, CSS & Vanilla JavaScript.</p>
             </div>
+
         </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- Contact -->
     <section id="contact" class="contact">
-        <h2 class="section-title">Contact Me</h2>
-
+        <h2>Contact Me</h2>
         <form>
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea placeholder="Your Message"></textarea>
-            <button type="submit">Send Message</button>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button class="btn">Send Message</button>
         </form>
     </section>
+
+    <footer>
+        <p>© 2025 Kavindra | All rights reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
